@@ -18,9 +18,7 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            /*background-color: #7401ee;*/
             background: linear-gradient(148deg, #9d4fd8, #497efe);
-
         }
         h1 {
             font-family: 'Montserrat', sans-serif;
@@ -32,13 +30,11 @@
             padding: 10px;
             border-radius: 5px;
         }
-    
-        
         .numberDisplay {
             font-family: 'Montserrat', sans-serif;
             color: white;
-            font-size: 320px;
-            margin: 0 25px; /* Horizontal spacing between numbers */
+            font-size: 150px;
+            margin: 0 10px; /* Horizontal spacing between numbers */
             opacity: 1;
             transition: opacity 0.5s;
         }
@@ -65,24 +61,21 @@
             align-items: center;
             justify-content: center;
         }
-        
         #generateButton {
-                        
-            padding: 10px 20px;
-            font-size: 34px;
+            padding: 15px 30px; /* Increased padding for a larger button */
+            font-size: 24px; /* Adjusted font size */
             cursor: pointer;
-            margin-top: 10px; /* Space between numbers and button */
+            margin-top: 20px; /* Space between numbers and button */
         }
         .input-container {
-            
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         .input-container input {
-            padding: 10px;
-            font-size: 30px;
+            padding: 15px;
+            font-size: 24px;
             margin: 0 10px;
             border: 2px solid #ccc;
             border-radius: 5px;
@@ -101,15 +94,12 @@
     </style>
 </head>
 <body>
-
     <h1>Random Number Generator</h1>
     <div class="input-container">
         <input type="number" id="input1" placeholder="From">
         <input type="number" id="input2" placeholder="To">
-        <input type="number" id="input1" placeholder="Number of Winners">
-
+        <input type="number" id="input3" placeholder="Number of Winners">
     </div>
-  
     <div id="numberContainer">
         <div id="numberDisplay1" class="numberDisplay">0</div>
         <div id="numberDisplay2" class="numberDisplay">0</div>
